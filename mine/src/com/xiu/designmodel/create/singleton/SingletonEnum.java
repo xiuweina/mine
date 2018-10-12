@@ -1,15 +1,22 @@
 package com.xiu.designmodel.create.singleton;
 
 class Resource {
-
+    void print() {
+        System.out.println("0000");
+    }
 }
+
+/**
+ * 枚举单例，effective java 最优，
+ *SingletonEnum.INSTANCE.getResource
+ */
 public enum SingletonEnum {
     INSTANCE;
-    private Resource instance;
-    SingletonEnum(){
-        instance = new Resource();
+    private Resource resource;
+    SingletonEnum() {
+        resource = new Resource();
     }
-    public Resource getInstance() {
-        return instance;
+    public Resource getResource() {
+        return resource;
     }
 }

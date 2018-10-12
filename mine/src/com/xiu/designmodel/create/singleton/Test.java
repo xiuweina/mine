@@ -1,6 +1,10 @@
 package com.xiu.designmodel.create.singleton;
 
 public class Test {
+    public static void main(String[] args) {
+        SingletonEnum.INSTANCE.getResource().print();
+    }
+    /*
     static SingletonDC sin1 = null;
     static SingletonDC sin2 = null;
     public static void main(String[] args) {
@@ -39,9 +43,7 @@ public class Test {
         try {
             Thread.sleep(25000);
         } catch (InterruptedException e) {
-
-
         }
         System.out.println(sin1 == sin2);
-    }
+    } */
 }
